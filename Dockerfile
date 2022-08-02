@@ -18,11 +18,10 @@ RUN sudo apt-get install gnupg ca-certificates -y && \
 
 RUN sudo apt-get install mono-devel -y
 
-
 # Install AWS CLI
 # https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
 unzip awscliv2.zip && \
 sudo ./aws/install
 
-RUN sudo apt-get install mono-devel -y
+RUN sudo apt-get install less -y
