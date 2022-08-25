@@ -17,5 +17,5 @@ docker build -t act-dotnet .
 ## Run
 
 ```bash
-act --platform ubuntu-latest=act-dotnet --remote-name public
+act --platform ubuntu-latest=act-dotnet --remote-name origin --artifact-server-path artifacts
 ```
